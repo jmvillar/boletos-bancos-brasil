@@ -1,0 +1,32 @@
+{
+  "name": "Boletos-Bancos-Brasil",
+  "version": "0.0.5",
+  "description": "Gestão integral dos boletos de pagamento dos bancos no Brasil",
+  "main": "lib/index.js",
+  "types": "lib/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmvillar/boletos-bancos-brasil.git"
+  },
+  "keywords": [],
+  "author": "José Manuel Villar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmvillar/boletos-bancos-brasil/issues"
+  },
+  "homepage": "https://github.com/jmvillar/boletos-bancos-brasil#readme",
+  "devDependencies": {
+    "checkdigit": "^1.1.1",
+    "crypto": "^1.0.1",
+    "moment": "^2.18.1",
+    "nodemon": "^1.11.0",
+    "ramda": "^0.24.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "buffer": "^5.0.7",
+    "typestyle": "^1.3.8"
+  }
+}
