@@ -1,6 +1,6 @@
 {
-  "name": "Boletos-Bancos-Brasil",
-  "version": "0.0.5",
+  "name": "boletos-bancos-brasil",
+  "version": "0.0.7",
   "description": "Gestão integral dos boletos de pagamento dos bancos no Brasil",
   "main": "lib/index.js",
   "types": "lib/index.js",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "checkdigit": "^1.1.1",
     "crypto": "^1.0.1",
+    "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "nodemon": "^1.11.0",
     "pdfkit": "^0.8.3",
@@ -27,8 +28,8 @@
     "typescript": "^2.4.2"
   },
   "dependencies": {
+    "blob-stream": "^0.1.3",
     "buffer": "^5.0.7",
-    "fs": "0.0.1-security",
     "typestyle": "^1.3.8"
   }
 }

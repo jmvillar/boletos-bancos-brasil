@@ -1,2 +1,2 @@
 import { IBoleto } from './interfaces';
-export declare const GeneratePdf: (data: IBoleto) => void;
+export declare const GeneratePdf: (data: IBoleto) => any;
