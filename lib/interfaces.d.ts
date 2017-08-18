@@ -39,4 +39,5 @@ export interface IBoleto {
     instrucoes: string;
     local_de_pagamento: string;
     linha_digitavel: any;
+    pdf?: any;
 }

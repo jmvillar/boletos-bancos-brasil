@@ -1,4 +1,4 @@
-import { dvBarra, calculateLineChecksum, RemoveTrailingZeros, AddTrailingZeros, fatorVencimento, htmlString, Capitalize, dateFromEdiDate20, dateFromEdiDate } from './helper'
+import { Mod11, dvBarra, calculateLineChecksum, RemoveTrailingZeros, AddTrailingZeros, fatorVencimento, htmlString, Capitalize, dateFromEdiDate20, dateFromEdiDate } from './helper'
 import { IBoleto, IOptions } from './interfaces'
 declare var require
 const checkdigit = require('checkdigit');
@@ -18,7 +18,7 @@ const BarcodeData = (banco: string) => {
         } else if (banco == 'santander') {
             const fixo = '9'
             const ios = '0'
-            const nossoNumero = AddTrailingZeros(boleto.nosso_numero, 12) + checkdigit.mod11.create(boleto.nosso_numero)
+            const nossoNumero = AddTrailingZeros(boleto.nosso_numero, 12) + Mod11(boleto.nosso_numero)//checkdigit.mod11.create(boleto.nosso_numero)
             barra = codigoBanco + numMoeda + _fatorVencimento + valor + fixo + codigoCedente + nossoNumero + ios + carteira
         }
         console.log(barra)

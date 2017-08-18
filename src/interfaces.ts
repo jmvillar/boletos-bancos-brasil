@@ -38,5 +38,6 @@ export interface IBoleto {
     pagador: string
     instrucoes: string
     local_de_pagamento: string
-    linha_digitavel
+    linha_digitavel,
+    pdf?
 }
