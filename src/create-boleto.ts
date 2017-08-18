@@ -3,7 +3,7 @@ import { IBoleto, IOptions, IBank } from './interfaces'
 import { Banks } from './banks'
 import { GeneratePdf } from './pdf-layout'
 import { merge } from 'ramda';
-export const CreateBoleto = (options: IOptions): IBoleto => {
+export const CreateBoleto = (options): IBoleto => {
 	const bank: IBank = Banks[options.banco]
 	let boleto: IBoleto = merge(options, {
 		bank: bank,

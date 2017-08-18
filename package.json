@@ -1,6 +1,6 @@
 {
   "name": "boletos-bancos-brasil",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Gestão integral dos boletos de pagamento dos bancos no Brasil",
   "main": "lib/index.js",
   "types": "lib/index.js",
